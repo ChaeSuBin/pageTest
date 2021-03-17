@@ -11,7 +11,10 @@ module.exports = function(app) {
      });
      app.get('/about',function(req,res){
         res.render('about.html');
-    });
+     });
+     app.get('/QRscan',function(req,res){
+      res.render('indexQRscan.html');
+     });
      
     app.get('/listall', function (req, res) {
       //res.render('about.html');
